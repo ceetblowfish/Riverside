@@ -10,11 +10,18 @@
     <label for="text">Enter text or URL:</label>
     <input type="text" id="text" name="text">
     <button onclick="generateQR()">Generate QR Code</button>
+    <button onclick="shareQR()">Share QR Code</button>
+    <button onclick="downloadQR()">Download QR Code</button>
+    <button onclick="printQR()">Print QR Code</button>
     <div id="qrcode"></div>
     <script>
+      var qrcode;
       function generateQR() {
         var text = document.getElementById("text").value;
-        var qrcode = new QRCode(document.getElementById("qrcode"), {
+        if (qrcode) {
+          qrcode.clear();
+        }
+        qrcode = new QRCode(document.getElementById("qrcode"), {
           text: text,
           width: 256,
           height: 256,
@@ -22,6 +29,18 @@
           colorLight: "#ffffff",
           correctLevel: QRCode.CorrectLevel.H
         });
+      }
+    
+      function shareQR() {
+        // Code for sharing the QR code
+      }
+    
+      function downloadQR() {
+        // Code for downloading the QR code
+      }
+    
+      function printQR() {
+        // Code for printing the QR code
       }
     </script>
   </body>
