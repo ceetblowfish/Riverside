@@ -45,3 +45,28 @@ button {
   margin: 20px auto;
 }
 
+/* Styles for the river facts page */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#fact {
+  color: #666;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
